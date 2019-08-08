@@ -1,3 +1,7 @@
+:root {
+  --primary-color: #df4723;
+}
+
 .login-container {
   height: 100%;
   display: flex;
@@ -6,34 +10,52 @@
 }
 
 .login-container form {
-  width: 100%;
-  max-width: 300px;
+  width: 96%;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
 }
 
+.login-container img {
+  width: 160px;
+  margin: 0 auto;
+}
+
 .login-container form input {
-  height: 48px;
-  margin-top: 20px;
+  height: 62px;
+  margin-top: 48px;
   padding: 0 20px;
+  background-color: #e6e6e6;
   font-size: 16px;
   color: #666;
-  border: 1px solid #ddd;
+  border: 0;
+  border-bottom: 2px solid var(--primary-color);
   border-radius: 4px;
 }
 
 .login-container form input::placeholder {
-  color: #999;
+  color: #8f8fa1;
 }
 
 .login-container form button {
-  height: 48px;
-  margin-top: 10px;
+  height: 62px;
+  margin-top: 32px;
   font-size: 16px;
   color: #fff;
-  background-color: #df4723;
+  background-color: var(--primary-color);
   border: 0;
   border-radius: 4px;
   font-weight: bold;
   cursor: pointer;
+}
+
+.login-container form p {
+  margin-top: 12px;
+  font-size: 16px;
+  color: #8f8fa1;
+}
+
+.login-container form p a {
+  color: var(--primary-color);
+  text-decoration: none;
 }
